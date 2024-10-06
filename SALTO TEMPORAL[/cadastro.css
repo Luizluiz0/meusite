@@ -1,0 +1,110 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(im/Texto\ do\ seu\ parágrafo.jpg);
+}
+
+.formulario {
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.conteinter {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.conteinter input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.conteinter label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: #777;
+}
+
+.conteinter input:focus + label,
+.conteinter input:not(:placeholder-shown) + label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #333;
+}
+
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.conteinter label{
+    margin: 20%;
+    position: relative;
+    right: 10%;
+}
+
+.passwordbox i{
+    position: relative;
+    top: 20px;
+    left: 50%;
+
+}
+
+a {
+    position: relative;
+    top: 1;
+    bottom: 17%;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#confirma{
+    margin-top: 20px;
+    
+}
